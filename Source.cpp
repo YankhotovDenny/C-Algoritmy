@@ -149,6 +149,7 @@ void reverse(Node** head) {
         push_left(&tmp, (*head)->value);
         *head = (*head)->next;
     }
+    free(*head);
     *head = tmp;
 }
 
