@@ -74,10 +74,10 @@ bool init_from_file(subvector* q, const char* filename)
     string line;
     destructor(q);
 
-    ifstream in(filename); // окрываем файл для чтения
+    ifstream in(filename); // Г®ГЄГ°Г»ГўГ ГҐГ¬ ГґГ Г©Г« Г¤Г«Гї Г·ГІГҐГ­ГЁГї
     if (in.is_open())
     {
-        getline(in, line); // предпогагаю что все данные записаны в одну строчку
+        getline(in, line); // ГЇГ°ГҐГ¤ГЇГ®ГЈГ ГЈГ Гѕ Г·ГІГ® ГўГ±ГҐ Г¤Г Г­Г­Г»ГҐ Г§Г ГЇГЁГ±Г Г­Г» Гў Г®Г¤Г­Гі Г±ГІГ°Г®Г·ГЄГі
         istringstream iss(line);
         vector<string> v((istream_iterator<string>(iss)), istream_iterator<string>());
         for (int i = 0; i < size(v); i++)
