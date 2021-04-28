@@ -9,7 +9,6 @@ std::vector<int> Rykzak(int n, std::vector<int> weight, std::vector<int> value, 
 		if (n - weight[i] >= 0) {
 			a = head[n - weight[i]] + value[i];
 		}
-		else a = 0;
 		h.push_back(a);
 	}
 	a = h.front();
