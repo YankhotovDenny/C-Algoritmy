@@ -27,6 +27,7 @@ int main() {
 	std::cout << "Введите вес элементов по индексам: ";
 	std::cout << std::endl;
 	for (int i = 0; i < n; ++i) {
+		std::cout << i+1 << ": ";
 		std::cin >> z;
 		weight.push_back(z);
 	}
@@ -34,6 +35,7 @@ int main() {
 	std::cout << "Введите вес элементов по индексам: ";
 	std::cout << std::endl;
 	for (int i = 0; i < n; ++i) {
+		std::cout << i+1 << ": ";
 		std::cin >> z;
 		value.push_back(z);
 	}
